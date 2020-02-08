@@ -32,7 +32,7 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             python pip -m install --upgrade pip
-            pip install -r decagoncenter/requirements.txt
+            pip install -r requirements.txt
 
       - save_cache:
           paths:

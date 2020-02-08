@@ -23,7 +23,8 @@ os.environ['BASE_DIR'] = BASE_DIR
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config("SECRET_KEY")
+# SECRET_KEY = config("SECRET_KEY")
+SECRET_KEY = 'b+tz!_uiw5)=&c60y&4(@grp6!ru)a#@7snikwt_7p=&n^6-j0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", cast = bool)

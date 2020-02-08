@@ -27,7 +27,7 @@ os.environ['BASE_DIR'] = BASE_DIR
 SECRET_KEY = 'b+tz!_uiw5)=&c60y&4(@grp6!ru)a#@7snikwt_7p=&n^6-j0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DEBUG", cast=bool)
+DEBUG = config("DEBUG", cast=bool, default=False)
 
 ALLOWED_HOSTS = ['*']
 

@@ -4,7 +4,7 @@ setup:
 
 build:
   docker:
-    web: DOckerfile
+    web: Dockerfile
 
 run:
   web: gunicorn decagoncenter.wsgi:application 0.0.0.0:$PORT

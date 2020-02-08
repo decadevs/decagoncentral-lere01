@@ -27,7 +27,7 @@ os.environ['BASE_DIR'] = BASE_DIR
 SECRET_KEY = 'b+tz!_uiw5)=&c60y&4(@grp6!ru)a#@7snikwt_7p=&n^6-j0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DEBUG", cast = bool)
+DEBUG = config("DEBUG", cast=bool)
 
 ALLOWED_HOSTS = ['*']
 
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    # 'django.contrib.staticfiles',
+    'django.contrib.staticfiles',
     'centerapi',
     'rest_framework',
 ]

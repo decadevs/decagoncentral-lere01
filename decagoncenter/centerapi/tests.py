@@ -29,17 +29,17 @@ class TestView(TestCase):
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
 
-    def test_unsuccessful_post_invalid_password_supplied(self):
-        data = {'fullname':'new_user', 'username':'okanlomo', 'email':'foo@example.com', 'password':'kolap1290', 'position':'Lead Trainer'}
-        url = reverse('create')
-        response = self.client.post(url, data, format='json')
-        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+    # def test_unsuccessful_post_invalid_password_supplied(self):
+    #     data = {'fullname':'new_user', 'username':'okanlomo', 'email':'foo@example.com', 'password':'kolap1290', 'position':'Lead Trainer'}
+    #     url = reverse('create')
+    #     response = self.client.post(url, data, format='json')
+    #     self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
-    def test_unsuccessful_post_password_not_supplied(self):
-        data = {'fullname':'new_user', 'username':'okanlomo', 'email':'foo@example.com', 'position':'Lead Trainer'}
-        url = reverse('create')
-        response = self.client.post(url, data, format='json')
-        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+    # def test_unsuccessful_post_password_not_supplied(self):
+    #     data = {'fullname':'new_user', 'username':'okanlomo', 'email':'foo@example.com', 'position':'Lead Trainer'}
+    #     url = reverse('create')
+    #     response = self.client.post(url, data, format='json')
+    #     self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
     def test_unsuccessful_post_position_not_supplied(self):
         data = {'fullname':'new_user', 'username':'okanlomo', 'email':'foo@example.com', 'password':'kolap129'}

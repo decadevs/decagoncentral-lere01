@@ -8,7 +8,11 @@ def generate_url(DEBUG, url):
 
         return {"default": {
             "ENGINE": 'django.db.backends.postgresql',
-            "HOST": url
+            "HOST": url,
+            "NAME": "db_name",                      
+            "USER": "db_user",
+            "PASSWORD": "db_user_password",
+            "PORT": 5432
         }}
     else:
         return {

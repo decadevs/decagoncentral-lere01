@@ -12,7 +12,7 @@ def generate_url(DEBUG, url):
             "NAME": "db_name",                      
             "USER": "db_user",
             "PASSWORD": "db_user_password",
-            "PORT": 5432
+            "PORT": ""
         }}
     else:
         return {

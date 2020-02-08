@@ -14,7 +14,7 @@ jobs:
         #   - MONGODB_USERNAME: "admin"
         #   - MONGODB_PASSWORD: "admin"
     
-    working_directory: ~/repo
+    working_directory: ~/repo/decagoncenter
 
     steps:
       - checkout
